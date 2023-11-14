@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    padding: 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header .logo h1 {
+    font: 25px;
+    font-weight: 400;
+    color: white;
+    margin-left: 10px;
+}
+
+header ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container1 {
+    width: 100%;
+    height: 100vh;
+    padding: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 10px black;
+}
+
+.container1 .texto {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.container1 .texto h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.8);
+}
+
+.container1 .texto p {
+    font-size: 24px;
+    font-weight: 300;
+    padding-right: 100px;
+}
+
+.container1 img {
+    width: 500px;
+}
+
+.container-2 {
+    width: 100%;
+    height: 100vh;
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(imgs/_488d36e8-cacc-42a6-8e78-9863712baa4f.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-2 h1 {
+    font-size: 60px;
+    padding-bottom: 40px;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.container-2 .tabelas {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 60px;
+}
+
+.container-2 .tabelas .tabs {
+    padding: 20px;
+    display: flex;
+    align-items: center ;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+}
+
+.container-2 .tabelas .tabs p {
+    font-size: 18px;
+    font-weight: 300;
+
+}
