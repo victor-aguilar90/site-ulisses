@@ -80,11 +80,28 @@ header ul li a {
 .container1 .texto p {
     font-size: 24px;
     font-weight: 300;
-    padding-right: 100px;
+    width: 60%;
 }
 
 .container1 img {
     width: 500px;
+    transition: transform 2s ease-in-out;
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: scale(1.3);
+    }
 }
 
 .container-2 {
@@ -110,6 +127,7 @@ header ul li a {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2,100px);
     gap: 60px;
 }
 
@@ -125,5 +143,4 @@ header ul li a {
 .container-2 .tabelas .tabs p {
     font-size: 18px;
     font-weight: 300;
-
 }
