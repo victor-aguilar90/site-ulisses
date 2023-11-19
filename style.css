@@ -179,6 +179,22 @@ header ul li a {
     gap: 60px;
 }
 
+.container-3 .quads img { 
+    width: 200px;
+    animation: girar 5s infinite;
+    border: white 3px solid;
+    border-radius: 100%;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .container-3 .quads .quad {
     display: flex;
     flex-direction: column;
@@ -198,6 +214,7 @@ header ul li a {
     font-weight: 400;
     text-align: left;
     padding-bottom: 15px;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.8);
 }
 
 .container-3 .quads .quad p {
