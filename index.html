@@ -14,9 +14,9 @@
         </div>
         
         <ul>
-            <li><a href="#secao1" id="botao">Quem foi?</a></li>
-            <li><a href="#secao2">Mitos e Curiosidades</a></li>
-            <li><a href="#secao3">Produção Científica</a></li>
+            <li><a href="#secao1">Quem foi?</a></li>
+            <li><a href="#secao2" id="botao2">Mitos e Curiosidades</a></li>
+            <li><a href="#secao3" id="botao">Produção Científica</a></li>
         </ul>
     </header>
 
@@ -31,7 +31,7 @@
 
     <div class="container-2" id="secao2">
         <h1>Mitos e <br>Curiosidades</h1>
-        <div class="tabelas">
+        <div class="tabelas" id="tabs">
             <div class="tabs">
                 <p>Era um péssimo aluno e tinha problema com matemática</p>
             </div>
@@ -55,7 +55,7 @@
 
     <div class="container-3" id="secao3">
         <h2>Produção Científica <br>de Albert Einstein (1905):</h2>
-        <div class="quads">
+        <div class="quads" id="quad">
             <div class="quad">
                 <h3>Efeito <br>Fotoelétrico</h3>
                 <p>Einstein, aos 25 anos, publicou um artigo sobre a absorção da luz através do efeito fotoelétrico, desencadeando uma mudança paradigmática.</p>
@@ -82,6 +82,31 @@
     </div>
 
     <script>
+
+        let botao = document.getElementById('botao');
+
+        botao.addEventListener('click', function animacao() {
+
+        let quad = document.getElementById('quad');
+        quad.style.opacity = 1;
+
+        });
+
+        setTimeout(animacao, 7000);
     </script>
+
+    <script>
+        let botao2 = document.getElementById('botao2');
+
+        botao2.addEventListener('click', function animacao2() {
+
+        let tabs = document.getElementById('tabs');
+        tabs.style.opacity = 1;
+
+        });
+
+        setTimeout(animacao2, 7000);
+    </script>
+
 </body>
 </html>

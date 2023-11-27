@@ -130,6 +130,8 @@ header ul li a {
     display: grid;
     grid-template-columns: repeat(3, 30%);
     gap: 60px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
 }
 
 .container-2 .tabelas .tabs {
@@ -167,7 +169,7 @@ header ul li a {
 
 .container-3 h2 {
     text-align: center;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 500;
     padding-bottom: 40px;
     color: white;
@@ -177,6 +179,8 @@ header ul li a {
     grid-template-columns: repeat(4, 300px);
     justify-content: center;
     gap: 60px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
 }
 
 .container-3 .quads img { 
@@ -201,16 +205,16 @@ header ul li a {
     justify-content: center;
     padding: 20px;
     opacity: 0.9;
-    background: rgba( 255, 255, 255, 0.8 );
+    background: rgba( 255, 255, 255, 0.9 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 2.5px );
-    -webkit-backdrop-filter: blur( 2.5px );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .container-3 .quads .quad h3 {
-    font-size: 21px;
+    font-size: 24px;
     font-weight: 400;
     text-align: left;
     padding-bottom: 15px;
